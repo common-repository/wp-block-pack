@@ -1,0 +1,51 @@
+/* Accordion */
+
+.wp-block-pack-accordion-lite .accordion-panel{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.wp-block-pack-accordion-lite .accordion-panel.open{
+}
+.wp-block-pack-accordion-lite .accordion-panel .accordion-title{
+	border-radius: 5px;
+	padding: 1.4em 30px;
+	background-color: rgba(0,0,0,0.1);
+}
+.wp-block-pack-accordion-lite .accordion-panel.open .accordion-title{
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+.wp-block-pack-accordion-lite .accordion-panel .accordion-content{
+	padding: 0;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	max-height: 0;
+	overflow: hidden;
+    transition: all 0.4s ease;
+}
+.wp-block-pack-accordion-lite .accordion-panel.open .accordion-content{
+	border-color: #ddd;
+	max-height: 300px;
+    transition: all 0.6s ease;
+}
+.wp-block-pack-accordion-lite .accordion-panel .accordion-content .accordion-content-wrap{
+	padding: 1.8em 30px 1em 30px;
+}
+.components-checkbox-control__label div{
+	display: inline;
+}
+.wp-block-pack-accordion-lite.title-left .accordion-panel .accordion-title,
+.wp-block-pack-accordion-lite.content-left .accordion-panel .accordion-content{
+	text-align: left;
+}
+.wp-block-pack-accordion-lite.title-center .accordion-panel .accordion-title,
+.wp-block-pack-accordion-lite.content-center .accordion-panel .accordion-content{
+	text-align: center;
+}
+.wp-block-pack-accordion-lite.title-right .accordion-panel .accordion-title,
+.wp-block-pack-accordion-lite.content-right .accordion-panel .accordion-content{
+	text-align: right;
+}

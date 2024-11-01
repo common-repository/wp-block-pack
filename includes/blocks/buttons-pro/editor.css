@@ -1,0 +1,210 @@
+/* Inline Buttons */
+
+.editor-block-list__layout .editor-block-list__block[data-type="wp-block-pack/inline"]>.editor-block-list__block-edit::before{
+	top:0;
+	bottom: 0;
+}
+.editor-block-list__layout .editor-block-list__block[data-type="wp-block-pack/inline"]>.editor-block-list__block-edit>.editor-block-list__breadcrumb {
+	top: -1px;
+}
+
+
+.wp-block-pack-inline-block {
+	padding: 0;
+}
+.wp-block-pack-inline-block>* {
+	margin: 0 -4px;
+}
+.wp-block-pack-inline-block>.block-editor-inner-blocks {
+	margin-bottom: 1.8em;
+}
+#editor .wp-block-pack-inline-block .wp-block.block-editor-block-list__block,
+.editor-styles-wrapper .wp-block-pack-inline-block .wp-block.block-editor-block-list__block,
+.wp-block-pack-inline-block .wp-block.block-editor-block-list__block {
+	display: inline-block;
+	margin: 0 4px;
+	width: max-content;
+	width: auto;
+}
+
+.wp-block .wp-block-pack-inline-block .block-list-appender {
+	display: inline-flex;
+	position: absolute;
+	padding: 0;
+	right: -5px;
+	top: 50%;
+	margin-top: -25px;
+	width: 0;
+	height: 50px;
+	overflow: hidden;
+}
+.wp-block.is-hovered[data-type="wp-block-pack/inline-buttons"] .wp-block-pack-inline-block .block-list-appender,
+.wp-block.is-selected[data-type="wp-block-pack/inline-buttons"] .wp-block-pack-inline-block .block-list-appender {
+	overflow: visible;
+}
+.wp-block-pack-inline-block .block-list-appender .block-list-appender__toggle {
+	padding: 10px;
+	transform: translate(-11px, 4px);
+}
+.wp-block-pack-inline-block .editor-block-list__layout .editor-default-block-appender>.editor-default-block-appender__content, 
+.wp-block-pack-inline-block .editor-block-list__layout>.editor-block-list__block>.editor-block-list__block-edit, 
+.wp-block-pack-inline-block .editor-block-list__layout>.editor-block-list__layout>.editor-block-list__block>.editor-block-list__block-edit {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.wp-block-pack-inline-block .editor-block-list__layout .editor-block-list__block .editor-block-list__block-edit::before {
+	right: -7px;
+	left: -7px;
+}
+.wp-block-pack-inline-block<.editor-block-list__layout .editor-block-list__block .editor-block-list__block-edit::before{
+	top: 0;
+}
+.wp-block-pack-inline-block .editor-block-list__block>.editor-block-list__insertion-point{
+	height: 100%;
+	width: 28px;
+	left: -10px;
+	top: 16px;
+}
+.wp-block-pack-inline-block .editor-block-list__insertion-point-inserter{
+	top: 0;
+	bottom: 0;
+	left: auto;
+	right: auto;
+}
+.wp-block-pack-inline-block .editor-block-list__insertion-point-inserter .editor-inserter__toggle{
+	transform: translateY(50%);
+}
+.wp-block-pack-inline-block .editor-block-list__block>.editor-block-mover,
+.wp-block-pack-inline-block .editor-block-list__block>.editor-block-list__block-edit>.editor-block-mover {
+	width: 100%;
+	height: 30px;
+	max-width: 112px;
+	top: auto;
+	left: 0;
+	bottom: -65px;
+}
+.wp-block-pack-inline-block .editor-block-mover__control {
+	display: inline-flex;
+	margin-left: 2px;
+}
+.wp-block-pack-inline-block .editor-block-mover__control svg {
+	transform: rotate(-90deg);
+}
+.wp-block-pack-inline-block .components-drop-zone.editor-block-drop-zone.is-close-to-right {
+	border-right: 3px solid #0085ba;
+	border-bottom: none;
+}
+
+/*Other buttons Compatibility*/
+.wp-block-pack-inline-block .wp-block-kadence-advancedbtn .btn-area-wrap {
+    padding-top: 0;
+}
+
+/* Pro Button */
+
+.wp-block-pack-inline-block .wp-block.block-editor-block-list__block[data-type="wp-block-pack/button-pro"],
+.wp-block-buttons .wp-block.block-editor-block-list__block[data-type="wp-block-pack/button-pro"] {
+    display: inline-block;
+    width: auto;
+}
+.block-editor-block-list__layout .block-editor-block-list__block.is-selected[data-type="wp-block-pack/button-pro"]::before {
+    box-shadow: none;
+    border: none;
+}
+
+.wp-block-pack-button-pro{
+	display: inline-flex;
+	background-color: #32373c;
+	color: #ffffff;
+	border-radius: 100px;
+	border: 2px solid transparent;
+	padding: 10px 25px;
+	text-align: left;
+	cursor: pointer;
+	line-height: 1.8em;
+	width: max-content;	
+}
+.wp-block-pack-button-pro:focus-within {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #00a0d2;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+}
+.wp-block-pack-button-pro .icon-before,
+.wp-block-pack-button-pro .icon-after{
+	display: flex;
+	white-space: nowrap;
+	font-size: unset;
+	padding: 0;
+	height: auto;
+	color: unset;
+	vertical-align: middle;
+}
+.wp-block-pack-button-pro .icon-before.empty,
+.wp-block-pack-button-pro .icon-after.empty,
+.wp-block-pack-button-pro .components-button.icon-before:hover,
+.wp-block-pack-button-pro .components-button.icon-after:hover{
+	opacity: 0.5;
+}
+.wp-block-pack-button-pro .components-button.icon-before.empty:hover,
+.wp-block-pack-button-pro .components-button.icon-after.empty:hover{
+	opacity: 0.9;
+}
+.components-button.icon-before:not(:disabled):not([aria-disabled=true]):not(.is-secondary):not(.is-primary):not(.is-tertiary):not(.is-link):hover,
+.components-button.icon-after:not(:disabled):not([aria-disabled=true]):not(.is-secondary):not(.is-primary):not(.is-tertiary):not(.is-link):hover{
+	background-color: transparent;
+	color: unset;
+    box-shadow: none;
+}
+.wp-block-pack-button-pro .icon-after.components-button:focus:enabled,
+.wp-block-pack-button-pro .icon-before.components-button:focus:enabled{
+	background-color: transparent;
+	color: unset;
+	box-shadow: none;
+	outline: none;
+	outline-offset: 0;
+}
+.wp-block-pack-button-pro .icon-before{
+	margin-right: 0.4em;
+}
+.wp-block-pack-button-pro .icon-after{
+	margin-left: 0.4em;
+}
+.wp-block-pack-button-pro .icon-before svg,
+.wp-block-pack-button-pro .icon-after svg{
+	display: inline;
+}
+.wp-block-pack-button-pro .icon-before span,
+.wp-block-pack-button-pro .icon-after span{
+	vertical-align: middle;
+}
+.wp-block-pack-button-pro .editor-rich-text{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+}
+.wp-block-pack-button-pro .button-pro-content{
+	display: inline-block;
+	padding: 0px;
+	text-align: left;
+	cursor: text;
+}
+.wp-block-pack-button-pro.is-style-outline{
+	background-color: transparent;
+	color: #32373c;
+	border-color: #32373c;
+}
+.wp-block-pack-button-pro.is-style-squared{
+	border-radius: 0;
+}
+.wp-block-pack-button-pro.align-center .button-pro-content{
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+.wp-block-pack-button-pro.align-right{
+	text-align: right;
+}
+
+.editor-panel-tabs-settings .components-notice{
+	margin-bottom: 1.5em;
+}

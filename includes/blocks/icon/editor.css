@@ -1,0 +1,53 @@
+/* Icon */
+
+
+.align-center{
+	text-align: center;
+}
+.block-editor .attribute-editor{
+	overflow-y: hidden;
+}
+.block-editor .attribute-editor.shape-boxes-off{
+	display: none;
+}
+.block-editor .attribute-editor::after{
+	display: block;
+	content: ' ';
+	height: 0;
+	width: 100%;
+	clear: both;
+}
+.editor-block-inspector__icon-info{
+	padding: 1em;
+}
+
+.icon-display.align-left {
+	text-align: left;
+}
+.icon-display.align-right {
+	text-align: right;
+}
+.icon-display.align-center {
+	text-align: center;
+}
+.icon-display{
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+}
+.icon-display svg{
+	fill: inherit;
+	color: inherit;
+}
+.popup-button {
+	color: #555d66;
+}
+.popup-button:hover {
+	color: #0085ba;
+}
+.popup-button span {
+	padding-left: 5px;
+}
+.components-modal__screen-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}

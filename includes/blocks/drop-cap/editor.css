@@ -1,0 +1,156 @@
+/* Drop Cap */
+
+.components-base-control.drop-cap-deactivation{
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding: 0 14px;
+}
+.components-base-control.drop-cap-deactivation .components-base-control__field{
+	margin-bottom: 0;
+}
+.components-base-control.drop-cap-deactivation .components-base-control.components-toggle-control{
+	margin-bottom: 0;
+}
+.components-base-control.drop-cap-deactivation .components-base-control.components-toggle-control .components-form-toggle{
+	margin-right: 9px;
+	margin-top: 4px;
+}
+.components-base-control.drop-cap-deactivation .components-base-control.components-toggle-control .components-toggle-control__label{
+	margin: 0;
+}
+
+p.wp-block-pack-drop-cap{
+}
+p.wp-block-pack-drop-cap.align-left{
+	text-align: left;
+}
+p.wp-block-pack-drop-cap.align-center{
+	text-align: center;
+}
+p.wp-block-pack-drop-cap.align-right{
+	text-align: right;
+}
+p.wp-block-pack-drop-cap.has-background-color{
+	padding: 1em 1.5em;
+	color: #fff;
+}
+p.wp-block-pack-drop-cap.has-text-color{
+	color: unset;
+}
+#editor .edit-post-visual-editor .editor-rich-text p.wp-block-pack-drop-cap.has-small-font-size {
+	font-size: 0.85em;
+}
+#editor .edit-post-visual-editor .editor-rich-text p.wp-block-pack-drop-cap.has-medium-font-size {
+	font-size: 1.3em;
+}
+#editor .edit-post-visual-editor .editor-rich-text p.wp-block-pack-drop-cap.has-large-font-size {
+	font-size: 1.7em;
+}
+#editor .edit-post-visual-editor .editor-rich-text p.wp-block-pack-drop-cap.has-huge-font-size {
+	font-size: 2.3em;
+}
+p.wp-block-pack-drop-cap:not(:focus)::first-letter,
+p.wp-block-pack-drop-cap:not(:focus):first-child::first-letter {
+	float: left;
+	font-size: 4em;
+	line-height: 0.8em;
+	margin-right: .1em;
+	padding-top: 0.05em;
+	padding-bottom: 0;
+	padding-right: 0;
+	padding-left: 0;
+}
+p.wp-block-pack-drop-cap.has-box-drop-cap:not(:focus):first-child::first-letter {
+	font-size: 2.9em;
+	background-color: #333;
+	padding: calc(0.07em + 4px) calc(0.1em + 4px) 4px calc(0.1em + 4px);
+	margin-right: .2em;
+	color: white;
+	line-height: 1em;
+}
+p.wp-block-pack-drop-cap.has-box-drop-cap.has-background-color:not(:focus):first-child::first-letter {
+	background-color: white;
+}
+p.wp-block-pack-drop-cap.has-box-stroke-drop-cap:not(:focus):first-child::first-letter {
+	font-size: 2.9em;
+	border: 4px solid #333;
+	padding: 0.07em 0.1em 0 0.1em;
+	margin-right: .2em;
+	line-height: 1em;
+}
+p.wp-block-pack-drop-cap.has-box-stroke-drop-cap.has-background-color:not(:focus):first-child::first-letter {
+	border-color: #fff;
+}
+p.wp-block-pack-drop-cap.has-letter-shadow-drop-cap:not(:focus):first-child::first-letter {
+	text-shadow:
+		-1px -1px 0 white,
+		-1px 1px 0 white,
+		1px -1px 0 white,
+		1px 1px 0 white,
+		4px 4px 0 #333;
+}
+p.wp-block-pack-drop-cap.has-letter-shadow-drop-cap.has-background-color:not(:focus):first-child::first-letter {
+	text-shadow:
+		-1px -1px 0 #333,
+		-1px 1px 0 #333,
+		1px -1px 0 #333,
+		1px 1px 0 #333,
+		4px 4px 0 white;
+}
+
+p.wp-block-pack-drop-cap.has-small-drop-cap:not(:focus):first-child::first-letter {
+	font-size: 2em;
+}
+p.wp-block-pack-drop-cap.has-box-drop-cap.has-small-drop-cap:not(:focus):first-child::first-letter,
+p.wp-block-pack-drop-cap.has-box-stroke-drop-cap.has-small-drop-cap:not(:focus):first-child::first-letter {
+	font-size: 1.3em;
+}
+p.wp-block-pack-drop-cap.has-medium-drop-cap:not(:focus):first-child::first-letter {
+	font-size: 6em;
+}
+p.wp-block-pack-drop-cap.has-box-drop-cap.has-medium-drop-cap:not(:focus):first-child::first-letter,
+p.wp-block-pack-drop-cap.has-box-stroke-drop-cap.has-medium-drop-cap:not(:focus):first-child::first-letter {
+	font-size: 4.6em;
+}
+p.wp-block-pack-drop-cap.has-large-drop-cap:not(:focus):first-child::first-letter {
+	font-size: 8em;
+}
+p.wp-block-pack-drop-cap.has-box-drop-cap.has-large-drop-cap:not(:focus):first-child::first-letter,
+p.wp-block-pack-drop-cap.has-box-stroke-drop-cap.has-large-drop-cap:not(:focus):first-child::first-letter {
+	font-size: 6.3em;
+}
+p.wp-block-pack-drop-cap.has-huge-drop-cap:not(:focus):first-child::first-letter {
+	font-size: 10em;
+}
+p.wp-block-pack-drop-cap.has-box-drop-cap.has-huge-drop-cap:not(:focus):first-child::first-letter,
+p.wp-block-pack-drop-cap.has-box-stroke-drop-cap.has-huge-drop-cap:not(:focus):first-child::first-letter {
+	font-size: 7.9em;
+}
+p.wp-block-pack-drop-cap::after{
+	display: block;
+	width: 100%;
+	content: '';
+	clear: both;
+}
+
+.wp-block-pack-popover-fontsize .components-button {
+	display: block;
+	position: relative;
+	padding: 10px 20px 10px 40px;
+	width: 100%;
+	text-align: left;
+}
+.wp-block-pack-popover-fontsize .components-button:focus {
+	box-shadow: none;
+}
+.wp-block-pack-popover-fontsize .components-button svg {
+	position: absolute;
+	top: calc(50% - 10px);
+	left: 10px;
+}
+
+.components-font-size-picker__buttons .components-font-size-picker__selector.is-wp_block_pack-popover{
+	text-transform: capitalize;
+}

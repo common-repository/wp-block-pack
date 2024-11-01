@@ -1,0 +1,402 @@
+@import url("../../includes/blocks/accordion-lite/editor.css");
+@import url("../../includes/blocks/advertisement/editor.css");
+@import url("../../includes/blocks/blockquote/editor.css");
+@import url("../../includes/blocks/buttons-pro/editor.css");
+@import url("../../includes/blocks/counter/editor.css");
+@import url("../../includes/blocks/drop-cap/editor.css");
+@import url("../../includes/blocks/icon/editor.css");
+@import url("../../includes/blocks/notice/editor.css");
+@import url("../../includes/blocks/section/editor.css");
+@import url("../../includes/blocks/tabs/editor.css");
+@import url("../../includes/blocks/testimonial/editor.css");
+
+
+/* Block Setting Bar  */
+
+.components-base-control .component-input-number{
+	width: 112px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.editor-panel-transition-settings .components-base-control.transition-duration-settings{
+	margin-bottom: 0!important;
+}
+.editor-panel-transition-settings .components-base-control.transition-duration-settings::after{
+	width: 100%;
+	content: " ";
+	height: 0px;
+	display: block;
+	float: none;
+	clear: both;
+}
+.editor-panel-transition-settings .components-base-control.transition-duration-settings .component-range-number,
+.editor-panel-transition-settings .components-base-control.transition-duration-settings .components-base-control.component-values{
+	width: 48%;
+	height: 50px;
+	margin-bottom: 0!important;
+	display: block;
+	float: left;
+}
+.editor-panel-transition-settings .components-base-control.transition-duration-settings .components-base-control.component-values .buttons-incdec{
+	width: 20px;
+	height: 40px;
+	margin-left: 10px;
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.editor-panel-transition-settings .components-base-control.transition-duration-settings .components-base-control.component-values .buttons-incdec button{
+	width: 20px;
+	height: 20px;
+	border: none;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	float: left;
+	background: none;
+	cursor: pointer;
+}
+.editor-panel-transition-settings .components-base-control.transition-duration-settings .components-base-control.component-values .buttons-incdec button:focus{ 
+	outline: none;
+}
+.editor-panel-transition-settings .components-base-control.transition-duration-settings .components-base-control.component-values .buttons-incdec button:focus svg{ 
+	fill: grey;
+}
+.editor-panel-transition-settings .components-base-control.transition-duration-settings .components-base-control.component-values .buttons-incdec button svg{
+	vertical-align: top;
+}
+.editor-block-icon.has-colors svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
+}
+.toggle-button .components-button{
+	border-radius: 4px;
+	padding: 0px 5px;
+	margin: 3px;
+	line-height: 0px;
+	color: #555d66;
+}
+.toggle-button .components-toolbar__control.components-button{
+	padding: 3px;
+	margin: 0px;
+}
+.toggle-button .components-button:focus{
+	box-shadow: none;
+	color: #555d66;
+}
+.toggle-button.on .components-button{
+	background-color: #555d66;
+	color: #fff;
+}
+.toggle-button.button-float-left .components-button.left-float svg,
+.toggle-button.button-float-right .components-button.right-float svg{
+	background-color: #555d66;
+	color: #fff;
+	box-shadow: none;
+}
+.components-base-control.inspector-align-setting .components-toolbar{
+	border: none;
+}
+.components-base-control.inspector-align-setting .components-toolbar .components-toolbar__control.components-button{
+	width: 56px;
+}
+.components-base-control.inspector-align-setting .components-toolbar .components-toolbar__control.components-button svg{
+	width: 50px;
+	padding: 5px 15px;
+}
+.editor-button-link-settings .editor-url-input input[type=text]{
+	width: 100%;
+}
+.editor-button-border-settings .components-range-control .dashicon{
+	fill: #98a0a9;
+}
+.editor-button-border-settings.bord-none .border-width-setting,
+.editor-button-border-settings.bord-none .border-color-setting,
+.editor-button-border-settings.bord-hidden .border-width-setting,
+.editor-button-border-settings.bord-hidden .border-color-setting{
+	display: none;
+}
+select.wp-block-pack-select{
+	margin: 4px;
+}
+
+
+.editor-panel-color-settings.is-opened .components-panel__body-title .component-color-indicator{
+	display: none;
+}
+
+/* tabs */
+
+.editor-panel-tabs-settings .components-tab-panel__tabs{
+	margin-bottom: 20px;
+}
+.editor-panel-tabs-settings .components-tab-panel__tabs button{
+	background-color: transparent;
+	border: none;
+	padding: 15px 25px 15px 25px;
+	cursor: pointer;
+}
+.editor-panel-tabs-settings .components-tab-panel__tabs button.active{
+	padding-bottom: 12px;
+	border-bottom: 3px solid #0085ba;
+}
+.editor-panel-tabs-settings .components-tab-panel__tabs button:not(.active):hover{
+	color: #0085ba;
+}
+.radio-text-transform .components-base-control__label{
+	margin-bottom: 8px;
+}
+.editor-radio-half .components-radio-control__option,
+.radio-text-transform .components-radio-control__option{
+	width: 48%;
+	display: inline-block;
+}
+.radio-text-transform .components-base-control__help{
+	margin-top: -4px;
+}
+
+/*Icon Picker Modal*/
+.icon-picker-modal-content{
+	min-width: 520px;
+}
+.icon-picker-modal-content .icon-pack-label,
+.icon-picker-modal-content .icon-pack-selector,
+.icon-picker-modal-content .icon-subpack-selector,
+.icon-picker-modal-content .icon-input-filter{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+.icon-picker-modal-content .icon-pack-label{
+	width: max-content;
+	margin-bottom: 8px;
+}
+.icon-picker-modal-content .icon-pack-selector{
+	width: 120px;
+}
+.icon-picker-modal-content .icon-pack-selector select{
+	height: 32px;
+}
+.icon-picker-modal-content .icon-subpack-selector{
+	width: 80px;
+}
+.icon-picker-modal-content .components-base-control+.components-base-control {
+    margin-bottom: unset;
+}
+.icon-picker-modal-content .icon-subpack-selector select{
+	height: 32px;
+}
+.icon-picker-modal-content .icon-input-filter{
+	margin-bottom: 8px;
+	float: right;
+	border: 1px solid #8d96a0;
+	border-radius: 4px;
+	padding: 0px 8px;
+}
+.icon-picker-modal-content .icon-input-filter span.fas{
+	color: #8d96a0;
+}
+.icon-picker-modal-content input.editor-input[type=search],
+.icon-picker-modal-content input.editor-input{
+	border: none;
+	margin: 1px;
+	padding: 0 0 0 5px;
+	border-radius: 0;
+}
+.icon-picker-modal-content input.editor-input[type=search]:focus,
+.icon-picker-modal-content input.editor-input:focus{
+	box-shadow: none;
+}
+
+.icon-picker-modal-content .icon-picker-area {
+	display: block;
+	min-height: 100px;
+	height: calc(100vh - 250px);
+	padding-top: 15px;
+	overflow-y: scroll;
+	width: 100%;
+}
+.icon-picker-modal-content .icon-picker-area label {
+	padding: 15px 10px;
+	width: calc(16.66% - 6.334px);
+	height: 80px;
+	margin: 3px;
+	display: inline-block;
+	text-align: center;
+}
+.icon-picker-modal-content .icon-picker-area label svg,
+.icon-picker-modal-content .icon-picker-area label .dashicons {
+	width: 30px;
+	height: 30px;
+	fill: #3f464e;
+}
+.icon-picker-modal-content .icon-picker-area label:hover {
+	box-shadow: 0 0 1px 1px rgb(0, 109, 217);
+}
+.icon-picker-modal-content .icon-picker-area label.active {
+	box-shadow: none;
+	background-color: rgb(0, 109, 217);
+}
+.icon-picker-modal-content .icon-picker-area label.active svg {
+	fill: white;
+}
+.icon-picker-modal-content .icon-picker-area label span {
+	color: #3f464e;
+	vertical-align: middle;
+	height: 20px;
+	/*transform: translateY(-37%);*/
+}
+.icon-picker-modal-content .icon-picker-area label span.dashicons,
+.icon-picker-modal-content .icon-picker-area label span.fa-fw {
+	height: 30px;
+	width: 30px;
+	font-size: 24px;
+}
+.icon-picker-modal-content .icon-picker-area label span.icon-name {
+	margin-top: 10px;
+	color: #3f464e;
+	display: block;
+	font-size: 0.8em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.icon-picker-modal-content .icon-picker-area label.active span {
+	color: white;
+}
+.icon-picker-modal-content .icon-picker-area input[type="radio"] {
+	display: none;
+}
+.icon-picker-modal-content .icon-picker-area label:hover:not(.active) svg{
+	fill: rgb(0, 109, 217);
+}
+.icon-picker-modal-content .icon-picker-area label:hover:not(.active) span{
+	color: rgb(0, 109, 217);
+}
+.editor-styles-wrapper .fa,
+.editor-styles-wrapper .far,
+.editor-styles-wrapper .fas{
+	font-family: "Font Awesome 5 Free";
+}
+.editor-styles-wrapper .fab {
+	font-family: "Font Awesome 5 Brands";
+}
+@media screen and (max-width: 780px) {
+}
+
+@media screen and (max-width: 600px) {
+	.icon-picker-modal-content .icon-picker-area {
+		height: calc(100vh - 200px);
+	}
+	.icon-picker-modal-content .icon-pack-label {
+	    margin-bottom: 18px;
+	    margin-top: 10px;
+	    width: 72px;
+	    margin-right: 18px;
+	}
+	.icon-picker-modal-content .icon-pack-selector {
+	    width: calc(100% - 90px);
+	    margin-right: 0;
+	}
+	.icon-picker-modal-content .icon-pack-selector.fa-solid,
+	.icon-picker-modal-content .icon-pack-selector.fa-regular,
+	.icon-picker-modal-content .icon-pack-selector.fa-brand {
+	    width: calc(60% - 54px);
+	    margin-right: 18px;
+	}
+	.icon-picker-modal-content .icon-subpack-selector {
+	    width: calc(40% - 54px);
+	    margin-right: 0;
+	}
+	.icon-picker-modal-content .icon-input-filter {
+		float: none;
+		display: block;
+		margin: 6px 0 18px 0;
+	}
+	.icon-picker-modal-content .icon-input-filter input {
+		width: calc(100% - 20px);
+	}
+	.icon-picker-modal-content .icon-picker-area label {
+		width: calc(20% - 8px);
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.icon-picker-modal-content {
+	    min-width: 100px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.icon-picker-modal-content .icon-picker-area label {
+		width: calc(25% - 6px);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.icon-picker-modal-content .icon-picker-area label {
+		width: calc(33.33% - 6px);
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.icon-picker-modal-content .icon-picker-area label {
+		width: calc(50% - 6px);
+	}
+}
+
+/* Icon Size */
+
+.size-xs svg{
+	width: 0.75em;
+	height: 0.75em;
+}
+.size-sm svg{
+	width: 0.875em;
+	height: 0.875em;
+}
+.size-1x svg{
+	width: 1em;
+	height: 1em;
+}
+.size-lg svg{
+	width: 1.33333em;
+	height: 1.33333em;
+}
+.size-2x svg{
+	width: 2em;
+	height: 2em;
+}
+.size-3x svg{
+	width: 3em;
+	height: 3em;
+}
+.size-4x svg{
+	width: 4em;
+	height: 4em;
+}
+.size-5x svg{
+	width: 5em;
+	height: 5em;
+}
+.size-6x svg{
+	width: 6em;
+	height: 6em;
+}
+.size-7x svg{
+	width: 7em;
+	height: 7em;
+}
+.size-8x svg{
+	width: 8em;
+	height: 8em;
+}
+.size-9x svg{
+	width: 9em;
+	height: 9em;
+}
+.size-10x svg{
+	width: 10em;
+	height: 10em;
+}
